@@ -12,13 +12,14 @@ export class ArrayList<T> implements IArrayList<T>{
     }
 
     get(index: number): T {
-
+        return this.container[index];
     }
 
     remove(): void {
+        this.container.pop();
     }
 
     size(): number {
-        return 0;
+        return this.container.length;
     }
 }
